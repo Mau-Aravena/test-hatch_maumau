@@ -1,7 +1,7 @@
 # test-hatch_maumau
 
-[![PyPI - Version](https://img.shields.io/pypi/v/test-hatch-maumau.svg)](https://pypi.org/project/test-hatch-maumau)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/test-hatch-maumau.svg)](https://pypi.org/project/test-hatch-maumau)
+[![PyPI - Version](https://img.shields.io/pypi/v/test-hatch-maumau.svg)](https://test.pypi.org/project/test-hatch-maumau)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/test-hatch-maumau.svg)](https://test.pypi.org/project/test-hatch-maumau)
 
 ---
 
