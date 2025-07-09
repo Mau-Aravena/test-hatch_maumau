@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "test-hatch-maumau"
+dynamic = ["version"]
+description = 'A test about making a package with hatch and GitHub Actions'
+readme = "README.md"
+requires-python = ">=3.12"
+license = "BSD-3-Clause"
+keywords = []
+authors = [
+  { name = "MauMau", email = "mau.aravena@outlook.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "cowsay"
+]
+
+[project.urls]
+Documentation = "https://github.com/Mau-Aravena/test-hatch-maumau#readme"
+Issues = "https://github.com/Mau-Aravena/test-hatch-maumau/issues"
+Source = "https://github.com/Mau-Aravena/test-hatch-maumau"
+
+[tool.hatch.version]
+path = "src/test_hatch_maumau/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+
+[tool.hatch.envs.docs]
+dependencies = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocstrings[python]",
+]
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/test_hatch_maumau tests}"
+
+[tool.coverage.run]
+source_pkgs = ["test_hatch_maumau", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/test_hatch_maumau/__about__.py",
+]
+
+[tool.coverage.paths]
+test_hatch_maumau = ["src/test_hatch_maumau", "*/test-hatch-maumau/src/test_hatch_maumau"]
+tests = ["tests", "*/test-hatch-maumau/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
