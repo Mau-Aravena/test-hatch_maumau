@@ -25,9 +25,9 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/Mau-Aravena/test-hatch-maumau#readme"
-Issues = "https://github.com/Mau-Aravena/test-hatch-maumau/issues"
-Source = "https://github.com/Mau-Aravena/test-hatch-maumau"
+Documentation = "https://github.com/Mau-Aravena/test-hatch_maumau#readme"
+Issues = "https://github.com/Mau-Aravena/test-hatch_maumau/issues"
+Source = "https://github.com/Mau-Aravena/test-hatch_maumau"
 
 [tool.hatch.version]
 path = "src/test_hatch_maumau/__about__.py"

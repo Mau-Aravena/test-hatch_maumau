@@ -44,7 +44,7 @@ def saystegosaurus(text: str):
     -------
         >>> print(saycow("Hi, :D"))
           ______
-        | Hi, :D |
+        < Hi, :D >
           ======
                     \.
                      \.
